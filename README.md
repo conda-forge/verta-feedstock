@@ -1,7 +1,7 @@
 About verta
 ===========
 
-Home: https://verta.readthedocs.io/en/latest/
+Home: https://verta.readthedocs.io/
 
 Package license: Apache-2.0
 

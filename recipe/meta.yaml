@@ -1,5 +1,5 @@
 {% set name = "verta" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24db7f5922fd63db8094717a020560435e121f5bf9c7c9478bad5938fe08947e
+  sha256: 4c12bc765e7eb978476f179fa53e3004d901f6a9afa517d3de7a6d8814b79867
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - googleapis-common-protos >=1.5
     - grpcio >=1.16
     - joblib >=0.13
+    - pathlib2 >=2.1
     - protobuf >=3.6
     - requests >=2.21
 
@@ -31,13 +32,13 @@ test:
     - verta
 
 about:
-  home: https://verta.readthedocs.io/en/latest/
+  home: https://verta.readthedocs.io/
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: 'Python client for interfacing with ModelDB'
 
-  doc_url: https://verta.readthedocs.io/en/latest/
+  doc_url: https://verta.readthedocs.io/
   dev_url: https://github.com/VertaAI/modeldb-client/
 
 extra:
