@@ -1,5 +1,5 @@
 {% set name = "verta" %}
-{% set version = "0.13.16" %}
+{% set version = "0.13.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5389b086c862ad0175b40af2be67ea734e3efef216a69d797cd50a9609e8d5b
+  sha256: 47c2041be972505c84a421f1af8ff202083f6bbc4798d37b9500cfd862c2c122
 
 build:
   noarch: python
