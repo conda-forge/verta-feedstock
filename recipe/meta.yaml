@@ -1,5 +1,5 @@
 {% set name = "verta" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0581283e328459840991e04597e37393777425432394fff79c3e3c9ae4fa5b59
+  sha256: b94f0508a7be00932140e0e7b89975fedf6408735267be9564e34b26c7946c9b
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python client for interfacing with ModelDB'
+  summary: Python client for interfacing with ModelDB
 
   doc_url: https://verta.readthedocs.io/
   dev_url: https://github.com/VertaAI/modeldb-oss/tree/master/client/verta
