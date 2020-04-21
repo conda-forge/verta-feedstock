@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python
+    - click
     - cloudpickle
     - googleapis-common-protos >=1.5
     - pathlib2 >=2.2
