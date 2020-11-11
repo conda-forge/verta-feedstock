@@ -5,11 +5,13 @@ Home: https://verta.readthedocs.io/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/verta-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python client for interfacing with ModelDB
 
+Development: https://github.com/VertaAI/modeldb/tree/master/client/verta
 
+Documentation: https://verta.readthedocs.io/
 
 Current build status
 ====================
