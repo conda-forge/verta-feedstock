@@ -1,5 +1,5 @@
 {% set name = "verta" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9c0c5d7c488847c30208c612bff1cc51893777cf62bec17852f64189c3f690c
+  sha256: 75fdad2a71c013e59d2c35919641fa537d6cd40266e3b5577ab444b1381ad31a
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python =2.7|>=3.5
     - pip
   run:
-    - python
+    - python =2.7|>=3.5
     - click
     - cloudpickle
     - googleapis-common-protos >=1.5
