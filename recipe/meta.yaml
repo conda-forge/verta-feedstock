@@ -1,5 +1,5 @@
 {% set name = "verta" %}
-{% set version = "0.19.3" %}
+{% set version = "0.20.0.post0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 931c81ea0bd4acee391553d3e97644c4ff20bd98e34b710249f81f1891bcf042
+  sha256: 664c211e51e4ef657f1e4e26146874a9c8790f8a97d3f97e0ef4f64b8da40066
 
 build:
   noarch: python
@@ -24,9 +24,9 @@ requirements:
     - cloudpickle ~=1.0
     - googleapis-common-protos >=1.5,<2.0
     - pathlib2 >=2.2,<3.0
-    - protobuf >=3.8,<4.0
+    - protobuf >=3.8,<3.18
     - pytimeparse >=1.1.8,<2.0
-    - pyyaml >=5.1,<5.4
+    - pyyaml >=5.1,<6.0
     - requests >=2.21,<3.0
 
 test:
@@ -46,4 +46,5 @@ about:
 extra:
   recipe-maintainers:
     - convoliution
+    - liuverta
     - mvartakAtVerta
