@@ -1,5 +1,5 @@
 {% set name = "verta" %}
-{% set version = "0.20.2" %}
+{% set version = "0.20.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4c20662e90ed600ea9f416e9c34057cbe094e4208f11e9790b26a7dc547995b3
+  sha256: 6db164d1c89026d85bd5b6026ec7760df7ea2d4c2a8135399af8234e65139509
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - cloudpickle ~=1.0
     - googleapis-common-protos >=1.5,<2.0
     - pathlib2 >=2.2,<3.0
-    - protobuf >=3.8,<3.18
+    - protobuf >=3.8,<4.0
     - pytimeparse >=1.1.8,<2.0
     - pyyaml >=5.1,<6.0
     - requests >=2.21,<3.0

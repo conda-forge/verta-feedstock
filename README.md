@@ -147,7 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@convoliution](https://github.com/convoliution/)
 * [@liuverta](https://github.com/liuverta/)
 * [@mvartakAtVerta](https://github.com/mvartakAtVerta/)
 
