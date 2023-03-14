@@ -1,5 +1,5 @@
 {% set name = "verta" %}
-{% set version = "0.22.0" %}
+{% set version = "0.22.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dea418cc8a1453db8c2abf09bd64be8ae211d1a8508bcaf5862d4df5303febac
+  sha256: 3223ca3e59b25f131f7b40641394cb952662ce7ec3fce3de6c38b11237cb4737
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - click >=7.0,<9.0
     - cloudpickle >=1.0,<3.0
     - googleapis-common-protos >=1.5,<2.0
+    - importlib-metadata >=3.7.0
     - protobuf >=3.8,<4.0
     - pytimeparse >=1.1.8,<2.0
     - pyyaml >=5.1,<7.0
