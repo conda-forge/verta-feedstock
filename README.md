@@ -147,6 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ewagner-verta](https://github.com/ewagner-verta/)
 * [@liuverta](https://github.com/liuverta/)
-* [@mvartakAtVerta](https://github.com/mvartakAtVerta/)
 
